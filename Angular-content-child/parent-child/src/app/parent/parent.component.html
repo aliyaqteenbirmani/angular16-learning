@@ -1,0 +1,23 @@
+<div>
+    <app-child>
+        <h3>Some heading</h3>
+        <p #para>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, eius. Officia incidunt eligendi odit mollitia consectetur cumque iste, sequi quisquam ipsam! A accusamus voluptatibus animi sunt. Dolor saepe enim ipsa.
+        </p>
+
+        <p #para>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, eius. Officia incidunt eligendi odit mollitia consectetur cumque iste, sequi quisquam ipsam! A accusamus voluptatibus animi sunt. Dolor saepe enim ipsa.
+        </p>
+
+        <p #para>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, eius. Officia incidunt eligendi odit mollitia consectetur cumque iste, sequi quisquam ipsam! A accusamus voluptatibus animi sunt. Dolor saepe enim ipsa.
+        </p>
+        <app-test [name]="'Merry jane'"></app-test>
+        <app-test [name]="'John Doe'"></app-test>
+        <app-test [name]="'Jane Smith'"></app-test>
+
+
+    </app-child>
+    <button class="learn-more" (click)="showParaValue()">Change Color</button>
+
+</div>

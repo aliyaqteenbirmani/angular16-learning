@@ -1,0 +1,33 @@
+.container {
+  height: 90.5vh;                /* Full screen height */
+  display: flex;                /* Enable flexbox */
+  justify-content: center;      /* Center horizontally */
+  /* align-items: center;          Center vertically */
+  background: #f4f4f4;          /* Light background */
+}
+.card {
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: #252525;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.btn{
+    background: #444;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background: #555;
+}

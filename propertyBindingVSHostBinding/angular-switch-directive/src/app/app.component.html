@@ -1,0 +1,45 @@
+<div class="notice-container">
+  <div class="notice-header">
+    <button (click)="onInfoClicked()">Info</button>
+    <button (click)="onServicesClicked()">Services</button>
+    <button (click)="onPrivacyClicked()">Privacy</button>
+    <button (click)="onUserAgreementClicked()">User Agreement</button>
+  </div>
+
+  <div class="notice-body"  [ngSwitch]="tab">
+      <div *ngSwitchDefault>
+        <h1>Terms of service & privacy policy</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla expedita facilis quam sit quisquam nihil cumque exercitationem ratione commodi asperiores, necessitatibus sunt saepe omnis rem repellat reprehenderit reiciendis temporibus maiores.
+        </p>
+      </div>
+
+      <div *ngSwitchCase="'services'">
+        <h2>Terms of service</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, odit quaerat accusantium laudantium velit ab incidunt sit aliquam repellendus iusto, molestiae, error beatae alias dicta quasi libero eligendi ipsam? Temporibus.
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis cumque ipsa consequatur, dolor vel facere. Officiis ducimus consequatur explicabo sit placeat sapiente fugiat dolorum. Quidem suscipit tenetur animi ipsam! </p>
+      </div>
+
+
+      <div *ngSwitchCase="'privacy'">
+        <h2>Privacy Policy</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, non suscipit rem cumque at accusantium sapiente doloremque? Vel, laborum explicabo dolore laboriosam error atque inventore. Sit illo cum distinctio autem.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia aut quidem placeat velit beatae! Delectus consectetur recusandae mollitia voluptates ea aliquid, fuga earum a sit corrupti! Harum, quibusdam consectetur.</p>
+      </div>
+  
+
+    <div *ngSwitchCase="'user-agreement'">
+      <h2>User Agreement</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, nostrum fugit. Magni cumque illum repellat nesciunt, nam odio dignissimos ullam ipsum aliquam officiis accusantium vel magnam possimus saepe iste tempora.
+      </p>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni in iste sit officia tenetur soluta. Reiciendis iste nemo, autem earum nesciunt ratione corporis eaque! Nihil eveniet earum distinctio consectetur minus.</p>
+    </div>
+</div>
+</div>

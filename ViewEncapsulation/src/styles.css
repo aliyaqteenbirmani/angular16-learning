@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+button{
+    height: 30px;
+    width: 120px;
+    border: none;
+    text-align: center;
+    background-color: coral;
+}

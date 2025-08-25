@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="plus">
+    <button (click)="displayTermsOfService()">+</button>
+  </div>
+
+  <div class="notice-info">
+    <p>Read terms of service and privacy policy.</p>
+  </div>
+  <!-- <ng-template  [ngIf]="display" [ngIfElse]="myTempVar"> -->
+    <div class="notice-body" *appIf="display">
+      <h1>
+        Terms of service & privacy policy
+      </h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla expedita facilis quam sit quisquam nihil cumque exercitationem ratione commodi asperiores, necessitatibus sunt saepe omnis rem repellat reprehenderit reiciendis temporibus maiores.
+      </p>
+      <h2>Terms of service</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, odit quaerat accusantium laudantium velit ab incidunt sit aliquam repellendus iusto, molestiae, error beatae alias dicta quasi libero eligendi ipsam? Temporibus.
+      </p>
+      <h2>Privacy Policy</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, non suscipit rem cumque at accusantium sapiente doloremque? Vel, laborum explicabo dolore laboriosam error atque inventore. Sit illo cum distinctio autem.
+      </p>
+    </div>
+  <!-- </ng-template>
+  <ng-template #myTempVar>
+    <div class="notice-body">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, non suscipit rem cumque at accusantium sapiente doloremque? Vel, laborum explicabo dolore laboriosam error atque inventore. Sit illo cum distinctio autem.
+      </p>
+    </div>
+  </ng-template> -->
+  <p *appIf="6>8"> This is a custom structural directive example.</p>
+</div>

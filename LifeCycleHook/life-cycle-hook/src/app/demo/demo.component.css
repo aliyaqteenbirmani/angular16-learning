@@ -1,0 +1,11 @@
+.demo {
+    margin-top: 20px;             /* space from button */
+    padding: 15px;
+    border: #28282b 2px solid;
+    border-radius: 3px;
+    width: 100%;                  /* stretch only demo */
+    background-color: white;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}

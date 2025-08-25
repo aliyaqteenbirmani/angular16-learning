@@ -1,0 +1,18 @@
+<h2>
+  Angular Custom Class & Style Directive
+</h2>
+
+<div [appClass] ="{'app-container': true,'apphighlight': true,'appFont': false}">
+  <p>
+    This directive allows you to apply custom styles and classes to elements in your Angular applications.
+    It is a great way to encapsulate styles and ensure that they are applied consistently across your application.
+  </p>
+</div>
+
+
+<div class="app-container" [appStyle]="{backgroundColor: active ? 'green' : 'blue', color: active ? 'white' : 'black'}">
+  <p>
+    This directive allows you to apply custom styles and classes to elements in your Angular applications.
+    It is a great way to encapsulate styles and ensure that they are applied consistently across your application.
+  </p>
+</div>
