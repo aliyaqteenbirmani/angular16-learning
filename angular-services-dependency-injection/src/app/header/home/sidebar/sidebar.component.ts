@@ -4,11 +4,13 @@ import { SubscribeService } from 'src/app/Service/subscribe.service';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  providers: [SubscribeService], // what to provide
 })
+
 export class SidebarComponent {
+  constructor(private subscribeService: SubscribeService) {} // How to provide dependency
+
   onSubscribeClicked() {
-    let subService = new SubscribeService();
-    subService.onSubscribe('Quarterly');
+    this.subscribeService.onSubscribe('Quarterly');
   }
 }

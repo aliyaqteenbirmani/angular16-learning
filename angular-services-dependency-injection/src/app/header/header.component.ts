@@ -4,9 +4,12 @@ import { SubscribeService } from '../Service/subscribe.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  providers: [SubscribeService]
 })
+
 export class HeaderComponent {
+  constructor(private subscribeService: SubscribeService) {}
+
   selectedTab: string = 'home';
 
   HomeClicked() {
@@ -21,7 +24,6 @@ export class HeaderComponent {
     // ADD user to Database
     // Send Email with subscription details
     // Allow user to access the service
-    let subService = new SubscribeService();
-    subService.onSubscribe('Monthly');
+    this.subscribeService.onSubscribe('Monthly');
   }
 }
