@@ -1,4 +1,4 @@
-<!-- <div class="admin-container">
+<div class="admin-container">
     <div class="admin-add-user">
         <input type="text" placeholder="User Name" [(ngModel)]="name">
         <select name="gender" [(ngModel)]="gender">
@@ -16,8 +16,8 @@
             <option value="Inactive">Inactive</option>
         </select>
         <br>
-        <button class="admin-button">CREAT</button>
+        <button class="admin-button" (click)="CreateNewUser()">CREAT</button>
     </div>
     <app-user-list></app-user-list>
     <app-user-detail></app-user-detail>
-</div> -->
+</div>

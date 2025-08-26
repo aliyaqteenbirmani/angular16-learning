@@ -9,6 +9,10 @@ import { HeroComponent } from './header/home/hero/hero.component';
 import { SidebarComponent } from './header/home/sidebar/sidebar.component';
 import { UserDetailComponent } from './header/admin/user-detail/user-detail.component';
 import { UserListComponent } from './header/admin/user-list/user-list.component';
+import { SubscribeService } from './Service/subscribe.service';
+import { FormsModule } from '@angular/forms';
+import { User } from './Models/User';
+import { UserService } from './Service/user.service';
 
 @NgModule({
   declarations: [
@@ -22,9 +26,10 @@ import { UserListComponent } from './header/admin/user-list/user-list.component'
     UserListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [SubscribeService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
