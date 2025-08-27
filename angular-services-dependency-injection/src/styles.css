@@ -153,6 +153,12 @@ select{
     color: yellow;
     font-weight: bold;
 }
+.admin-user-show-detail-button:hover{
+    background-color: yellow;
+    color: #28282B;
+    cursor: pointer;
+}
+
 .user-detail-container{
     margin: 10px 50px;
     width: 90%;
