@@ -1,0 +1,14 @@
+
+.container{
+    height: auto;
+    /* display: flex; */
+    padding-left: 30%;
+}
+.task-list {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 50%;
+    background-color: #f9f9f9;
+}

@@ -1,0 +1,26 @@
+.create-task-container{
+    background-color: rgb(40, 10, 69);
+    color: white;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+input
+{
+    height: 32px;
+    width: 40%;
+    padding-left: 3px;
+    background-color: none;
+    border: none;
+}
+button
+{
+    background-color: rgb(225, 55, 112);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
